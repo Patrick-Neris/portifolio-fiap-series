@@ -11,15 +11,20 @@
     --font-default: 'Poppins'
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--font-default);
+    background: fixed;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/televisor-antigo.jpg');
+    background-size: cover;
 }
 
 header{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/televisor-antigo.jpg');
-    background-size: cover;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -68,6 +73,7 @@ button{
     border-radius: 2rem;
     border: none;
     padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
 }
 
 .botaoSaibaMais{
@@ -88,10 +94,11 @@ section{
 }
 
 #textoSite{
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 .imagem-texto{
@@ -102,6 +109,12 @@ section{
 
 .avatar{
     border-radius: 100%;
+    padding-left: 1rem;
+    transition: .5s;
+}
+
+.avatar:hover{
+    transform: scale(1.1);
 }
 
 .botoes{
@@ -111,4 +124,51 @@ section{
     justify-content: space-around;
     align-items: center;
 }
+
+#secao-melhores-series{
+    height: 100vh;
+    width: 100vw;
+}
+
+#secao-melhores-series ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: space-around;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.card-image{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.card-image img{
+    height: 60rem;
+    width: 30rem;
+    border-radius: 5rem;
+}
+
+.card-info{
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    opacity: 0;
+    transition: opacity .5s ease-in-out, bottom .5s;
+}
+
+.card:hover .card-image {
+    opacity: .5;
+}
+
+.card:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
+
 

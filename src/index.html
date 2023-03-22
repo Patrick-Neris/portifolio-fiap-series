@@ -12,20 +12,51 @@
     <header>
         <h1>Resenha de Séries</h1>
         <span>by Patrick Neris</span>
-        <a href="#"><button class = "botaoSaibaMais">Saiba Mais</button></a>
+        <a href="#apresentacao"><button class = "botaoSaibaMais">Saiba Mais</button></a>
     </header>
     
-    <section>
+    <section id="apresentacao">
         <div class="imagem-texto">
             <img class = "avatar" src="https://github.com/Patrick-Neris.png" alt="Imagem do dono do site, Patrick Neris, bem gostoso">
             <p id="textoSite">Site dedicado a análises das melhores séries baseadas no meu gosto pessoal, totalmente parcial e não aberto a discussão!</p>
         </div>
         <div class = "botoes" >
-            <a href="#"><button>Melhores Séries</button></a>
+            <a href="#secao-melhores-series"><button>Melhores Séries</button></a>
             <a href="#"><button>Melhores de 2023</button></a>
         </div>
        
     </section>
+
+    <!-- section#secao-melhores-series>ul.cards>li*3>(div.card-image>img)+div.card-info>h3+h4+p Emmet Abreviation -->
+    <section id="secao-melhores-series">
+        <ul>
+            <li class="card">
+                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Top 1</h3>
+                    <h4>Breaking Bad</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Top 2</h3>
+                    <h4>Lorem.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Top 3</h3>
+                    <h4>Lorem.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
 </body>
 
 </html>
