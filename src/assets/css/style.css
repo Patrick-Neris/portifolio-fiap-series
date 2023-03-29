@@ -74,6 +74,11 @@ button{
     border: none;
     padding: 1rem 1rem 1rem 1rem;
     cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 .botaoSaibaMais{
@@ -162,7 +167,7 @@ section{
 }
 
 .card:hover .card-image {
-    opacity: .5;
+    opacity: .6;
 }
 
 .card:hover .card-info{
@@ -170,5 +175,42 @@ section{
     bottom: 20%;
 }
 
+#secao-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
 
+#secao-formulario form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    row-gap: 1rem;
+    padding: 2rem;
+    background-color: rgba(180, 180, 180, 0.5);
+    border-radius: 1rem;
+    position: relative;
+}
+
+#secao-formulario h3{
+    justify-self: center;
+    position: absolute;
+    top: -5%;
+    background-color: #f37335;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+#secao-formulario output{
+    grid-column: 2;
+}
+
+input[type=number]{
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+}
 

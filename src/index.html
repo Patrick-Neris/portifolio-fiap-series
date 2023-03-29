@@ -31,7 +31,7 @@
     <section id="secao-melhores-series">
         <ul>
             <li class="card">
-                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt=""></div>
+                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt="Breaking Bad"></div>
                 <div class="card-info">
                     <h3>Top 1</h3>
                     <h4>Breaking Bad</h4>
@@ -39,15 +39,15 @@
                 </div>
             </li>
             <li class="card">
-                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt=""></div>
+                <div class="card-image"><img src="./assets/images/got.jpg" alt="Game of Thrones"></div>
                 <div class="card-info">
                     <h3>Top 2</h3>
-                    <h4>Lorem.</h4>
+                    <h4>Game of Thrones</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </li>
             <li class="card">
-                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt=""></div>
+                <div class="card-image"><img src="./assets/images/the-last-of-us.jpg" alt="The Last Of Us"></div>
                 <div class="card-info">
                     <h3>Top 3</h3>
                     <h4>Lorem.</h4>
@@ -55,6 +55,32 @@
                 </div>
             </li>
         </ul>
+    </section>
+
+    <section id="secao-formulario">
+        <form action="">
+            <h3>Orçamento</h3>
+
+            <label for="qtde">Qtde de Páginas: </label>
+            <input type="number" id="qtde" min="1">
+
+            <label for="js">Precisa de Js ?</label>
+            <input type="checkbox" id="js">
+
+            <label for="layout">Precisa de Layout ?</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout_sim">Sim</label>
+
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout_nao">Não</label>
+            </div>
+
+            <label for="prazo">Prazo</label>
+            <input type="range" id="prazo">
+
+            <output>R$ 0,00</output>
+        </form>
     </section>
 
 </body>
