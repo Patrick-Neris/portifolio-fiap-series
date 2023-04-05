@@ -62,27 +62,28 @@
             <h3>Orçamento</h3>
 
             <label for="qtde">Qtde de Páginas: </label>
-            <input type="number" id="qtde" min="1">
+            <input type="number" id="qtde" min="1" value="1">
 
             <label for="js">Precisa de Js ?</label>
             <input type="checkbox" id="js">
 
             <label for="layout">Precisa de Layout ?</label>
             <div>
-                <input type="radio" id="layout_sim" name="layout">
+                <input type="radio" id="layout_sim" name="layout" value="false">
                 <label for="layout_sim">Sim</label>
 
-                <input type="radio" id="layout_nao" name="layout">
+                <input type="radio" id="layout_nao" name="layout" value="true">
                 <label for="layout_nao">Não</label>
             </div>
 
-            <label for="prazo">Prazo</label>
-            <input type="range" id="prazo">
+            <label for="prazo" id="label_prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
 
-            <output>R$ 0,00</output>
+            <output id="cost">R$ 100,00</output>
         </form>
     </section>
 
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
