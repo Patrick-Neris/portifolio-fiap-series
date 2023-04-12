@@ -1,89 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio Séries</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-    <header>
-        <h1>Resenha de Séries</h1>
-        <span>by Patrick Neris</span>
-        <a href="#apresentacao"><button class = "botaoSaibaMais">Saiba Mais</button></a>
+  <body>
+    <div id="hamburguer">
+      <img
+        src="./assets/svg/burger-menu.svg"
+        alt="Menu Hamburguer"
+        id="image-hamburguer"
+      />
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#init">
+            <i class="fa-solid fa-house" style="color: #fff"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#apresentacao">
+            <i class="fa-solid fa-person-chalkboard" style="color: #fff"></i>
+            Apresentação
+          </a>
+        </li>
+        <li>
+          <a href="#secao-melhores-series">
+            <i class="fa-solid fa-tv" style="color: #fff"></i>
+            Melhores Séries
+          </a>
+        </li>
+        <li>
+          <a href="#secao-formulario">
+            <i class="fa-solid fa-dollar-sign" style="color: #fff"></i>
+            Orçamento
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header id="init">
+      <h1>Resenha de Séries</h1>
+      <span>by Patrick Neris</span>
+      <a href="#apresentacao"
+        ><button class="botaoSaibaMais">Saiba Mais</button></a
+      >
     </header>
-    
+
     <section id="apresentacao">
-        <div class="imagem-texto">
-            <img class = "avatar" src="https://github.com/Patrick-Neris.png" alt="Imagem do dono do site, Patrick Neris, bem gostoso">
-            <p id="textoSite">Site dedicado a análises das melhores séries baseadas no meu gosto pessoal, totalmente parcial e não aberto a discussão!</p>
-        </div>
-        <div class = "botoes" >
-            <a href="#secao-melhores-series"><button>Melhores Séries</button></a>
-            <a href="#"><button>Melhores de 2023</button></a>
-        </div>
-       
+      <div class="imagem-texto">
+        <img
+          class="avatar"
+          src="https://github.com/Patrick-Neris.png"
+          alt="Imagem do dono do site, Patrick Neris, bem gostoso"
+        />
+        <p id="textoSite">
+          Site dedicado a análises das melhores séries baseadas no meu gosto
+          pessoal, totalmente parcial e não aberto a discussão!
+        </p>
+      </div>
+      <div class="botoes">
+        <a href="#secao-melhores-series"><button>Melhores Séries</button></a>
+        <a href="#"><button>Melhores de 2023</button></a>
+      </div>
     </section>
 
     <!-- section#secao-melhores-series>ul.cards>li*3>(div.card-image>img)+div.card-info>h3+h4+p Emmet Abreviation -->
     <section id="secao-melhores-series">
-        <ul>
-            <li class="card">
-                <div class="card-image"><img src="./assets/images/breaking-bad.jpg" alt="Breaking Bad"></div>
-                <div class="card-info">
-                    <h3>Top 1</h3>
-                    <h4>Breaking Bad</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-image"><img src="./assets/images/got.jpg" alt="Game of Thrones"></div>
-                <div class="card-info">
-                    <h3>Top 2</h3>
-                    <h4>Game of Thrones</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-image"><img src="./assets/images/the-last-of-us.jpg" alt="The Last Of Us"></div>
-                <div class="card-info">
-                    <h3>Top 3</h3>
-                    <h4>Lorem.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-            </li>
-        </ul>
+      <ul>
+        <li class="card">
+          <div class="card-image">
+            <img src="./assets/images/breaking-bad.jpg" alt="Breaking Bad" />
+          </div>
+          <div class="card-info">
+            <h3>Top 1</h3>
+            <h4>Breaking Bad</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-image">
+            <img src="./assets/images/got.jpg" alt="Game of Thrones" />
+          </div>
+          <div class="card-info">
+            <h3>Top 2</h3>
+            <h4>Game of Thrones</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-image">
+            <img
+              src="./assets/images/the-last-of-us.jpg"
+              alt="The Last Of Us"
+            />
+          </div>
+          <div class="card-info">
+            <h3>Top 3</h3>
+            <h4>Lorem.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section id="secao-formulario">
-        <form action="">
-            <h3>Orçamento</h3>
+      <form action="">
+        <h3>Orçamento</h3>
 
-            <label for="qtde">Qtde de Páginas: </label>
-            <input type="number" id="qtde" min="1" value="1">
+        <label for="qtde">Qtde de Páginas: </label>
+        <input type="number" id="qtde" min="1" value="1" />
 
-            <label for="js">Precisa de Js ?</label>
-            <input type="checkbox" id="js">
+        <label for="js">Precisa de Js ?</label>
+        <input type="checkbox" id="js" />
 
-            <label for="layout">Precisa de Layout ?</label>
-            <div>
-                <input type="radio" id="layout_sim" name="layout" value="false">
-                <label for="layout_sim">Sim</label>
+        <label for="layout">Precisa de Layout ?</label>
+        <div>
+          <input type="radio" id="layout_sim" name="layout" checked="false" />
+          <label for="layout_sim">Sim</label>
 
-                <input type="radio" id="layout_nao" name="layout" value="true">
-                <label for="layout_nao">Não</label>
-            </div>
+          <input type="radio" id="layout_nao" name="layout" checked="true" />
+          <label for="layout_nao">Não</label>
+        </div>
 
-            <label for="prazo" id="label_prazo">Prazo</label>
-            <input type="range" id="prazo" min="1" max="10">
+        <label for="prazo" id="label_prazo">Prazo</label>
+        <input type="range" id="prazo" min="1" max="10" />
 
-            <output id="cost">R$ 100,00</output>
-        </form>
+        <output id="cost">R$ 100,00</output>
+      </form>
     </section>
 
     <script src="./assets/js/script.js"></script>
-</body>
-
+    <script src="./assets/js/menu.js"></script>
+  </body>
 </html>

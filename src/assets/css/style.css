@@ -1,216 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
-* { /* RESET DO CSS */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  /* RESET DO CSS */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    font-size: 62.5%;   
-    --font-default: 'Poppins'
+:root {
+  font-size: 62.5%;
+  --font-default: "Poppins";
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: var(--font-default);
-    background: fixed;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/televisor-antigo.jpg');
-    background-size: cover;
+body {
+  font-family: var(--font-default);
+  background: fixed;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/televisor-antigo.jpg");
+  background-size: cover;
 }
 
-header{
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
+header {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
 
-h1 { 
-    font-size: 7.6rem;
-    font-weight: Regular; 
-    padding-top: 6.1rem;
-    padding-bottom: 0.5rem;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; 
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+h1 {
+  font-size: 7.6rem;
+  font-weight: Regular;
+  padding-top: 6.1rem;
+  padding-bottom: 0.5rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
-span{
-    font-weight: Regular;
-    font-style: italic;
-    font-size: 6.4rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
-    position: relative;
-    left: 12rem;
+span {
+  font-weight: Regular;
+  font-style: italic;
+  font-size: 6.4rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 12rem;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-button{
-    font-family: var(--font-default);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3.6rem;
-    line-height: 5.4rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: #000;
-    background: linear-gradient(270deg, rgba(253, 200, 48, 0.85) 0%, rgba(243, 115, 53, 0.425) 100%);
-    border-radius: 2rem;
-    border: none;
-    padding: 1rem 1rem 1rem 1rem;
-    cursor: pointer;
-    transition: .5s;
+li {
+  list-style-type: none;
+}
+
+button {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #000;
+  background: linear-gradient(
+    270deg,
+    rgba(253, 200, 48, 0.85) 0%,
+    rgba(243, 115, 53, 0.425) 100%
+  );
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 1rem 1rem 1rem;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 button:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.botaoSaibaMais{
-    position: relative;
-    top: 45rem;
-    right: 30rem;
-    padding: 1rem 5rem 1rem 5rem;
+#hamburguer {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  z-index: 10;
+  cursor: pointer;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+#hamburguer img {
+  height: 5rem;
 }
 
-#textoSite{
-    font-size: 3.6rem;
-    line-height: 5.4rem;
-    display: flex;
-    align-items: center;
-    color: #fff;
+.menu {
+  height: 30vh;
+  width: 30rem;
+  position: fixed;
+  right: -30rem;
+  background-color: rgba(243, 115, 53, 0.5);
+  z-index: 9;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 2rem;
 }
 
-.imagem-texto{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+.menu a {
+  color: #fff;
 }
 
-.avatar{
-    border-radius: 100%;
-    padding-left: 1rem;
-    transition: .5s;
+.show-menu {
+  right: 0;
+  transition: 0.5s;
 }
 
-.avatar:hover{
-    transform: scale(1.1);
+.botaoSaibaMais {
+  position: relative;
+  top: 45rem;
+  right: 30rem;
+  padding: 1rem 5rem 1rem 5rem;
 }
 
-.botoes{
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
 
-#secao-melhores-series{
-    height: 100vh;
-    width: 100vw;
+#textoSite {
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 
-#secao-melhores-series ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10rem;
-    justify-content: space-around;
+.imagem-texto {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
-.card{
-    position: relative;
-    cursor: pointer;
+.avatar {
+  border-radius: 100%;
+  padding-left: 1rem;
+  transition: 0.5s;
 }
 
-.card-image{
-    opacity: 1;
-    transition: opacity .5s;
+.avatar:hover {
+  transform: scale(1.1);
 }
 
-.card-image img{
-    height: 60rem;
-    width: 30rem;
-    border-radius: 5rem;
+.botoes {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.card-info{
-    color: #fff;
-    position: absolute;
-    bottom: 10%;
-    opacity: 0;
-    transition: opacity .5s ease-in-out, bottom .5s;
+#secao-melhores-series {
+  height: 100vh;
+  width: 100vw;
+}
+
+#secao-melhores-series ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: space-around;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-image {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.card-image img {
+  height: 60rem;
+  width: 30rem;
+  border-radius: 5rem;
+}
+
+.card-info {
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, bottom 0.5s;
 }
 
 .card:hover .card-image {
-    opacity: .6;
+  opacity: 0.6;
 }
 
-.card:hover .card-info{
-    opacity: 1;
-    bottom: 20%;
+.card:hover .card-info {
+  opacity: 1;
+  bottom: 20%;
 }
 
-#secao-formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+#secao-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-#secao-formulario form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: start;
-    row-gap: 1rem;
-    padding: 2rem;
-    background-color: rgba(180, 180, 180, 0.5);
-    border-radius: 1rem;
-    position: relative;
+#secao-formulario form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  padding: 5rem;
+  background-color: rgba(180, 180, 180, 0.5);
+  border-radius: 1rem;
+  position: relative;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-#secao-formulario h3{
-    justify-self: center;
-    position: absolute;
-    top: -5%;
-    background-color: #f37335;
-    color: #fff;
-    padding: .5rem;
-    border-radius: 1rem;
+#secao-formulario h3 {
+  justify-self: center;
+  position: absolute;
+  top: -5%;
+  background-color: #f37335;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
-#secao-formulario output{
-    grid-column: 2;
+#secao-formulario output {
+  grid-column: 2;
 }
 
-input[type=number]{
-    padding: .5rem;
-    border-radius: 1rem;
-    border: none;
+input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
 }
-
