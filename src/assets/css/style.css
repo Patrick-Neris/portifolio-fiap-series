@@ -39,7 +39,7 @@ header {
 }
 
 h1 {
-  font-size: 7.6rem;
+  font-size: clamp(3rem, 7vw, 7.6rem);
   font-weight: Regular;
   padding-top: 6.1rem;
   padding-bottom: 0.5rem;
@@ -268,4 +268,18 @@ input[type="number"] {
   padding: 0.5rem;
   border-radius: 1rem;
   border: none;
+}
+
+@media (max-width: 900px) {
+  #secao-melhores-series ul {
+    flex-direction: column;
+  }
+
+  .large-only {
+    display: none;
+  }
+
+  #secao-formulario form {
+    grid-template-columns: 1fr;
+  }
 }
